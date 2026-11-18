@@ -1,0 +1,21 @@
+.user-list-table thead th {
+  background-color: #304d30 !important;
+  color: #ffffff !important;
+  font-weight: 400;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 15px;
+}
+
+/* .user-list-table tbody td {
+  font-size: 14px;
+  color: #333;
+  text-align: start;
+  padding: 10px;
+  font-weight: 400;
+} */
+.user-list-row {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+}

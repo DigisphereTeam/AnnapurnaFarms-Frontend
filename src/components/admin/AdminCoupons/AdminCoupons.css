@@ -1,0 +1,121 @@
+.coupons-label {
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  color: #000000;
+  padding-top: 0px !important;
+}
+
+.product-input-field:focus {
+  box-shadow: none !important;
+  border: 2px solid #304d30 !important;
+}
+
+.add-grams-price {
+  color: #304d30 !important;
+  font-weight: 500;
+}
+
+.admin-dashboard-add-coupons-button {
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+  background-color: #304d30 !important;
+  border: #304d30;
+  margin-top: 13px;
+}
+
+.add-product-cancel {
+  padding: 7px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+  background-color: #ed1d1d !important;
+  border: #ed1d1d;
+  margin-top: 13px;
+}
+
+.admin-dash-coupons-table thead th {
+  background-color: #304d30 !important;
+  color: #ffffff !important;
+  font-weight: 400;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 15px;
+}
+
+.admin-dash-coupons-table tbody tr:hover td {
+  background-color: #dff5e5 !important;
+  color: #304d30 !important;
+  font-weight: 400;
+}
+
+.admin-dash-coupons-row {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+}
+
+/* .admin-product-edit {
+    width: 80px;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #304d30;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .admin-product-edit:hover {
+    background-color: #276327 !important;
+    box-shadow: none !important;
+  }
+  
+  .admin-product-delete {
+    width: 80px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #ed1d1d !important;
+    color: #ffffff;
+    border: none;
+    margin-left: 10px;
+  }
+  
+  .admin-product-delete:hover {
+    background-color: #c41414 !important;
+    box-shadow: none !important;
+  } */
+
+.admin-coupons-action-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.admin-coupons-edit-icon {
+  color: #304d30;
+}
+
+.admin-coupons-delete-icon {
+  color: #ed1d1d;
+}
+
+.admin-coupons-action-icon:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-select {
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-product-delete {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,351 @@
+.homefeaturedproducts-main {
+  padding: 40px 0;
+  text-align: center;
+  font-family: "Inter", "Poppins", sans-serif !important;
+}
+
+.homefeaturedproducts-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.homefeaturedproducts-title span {
+  color: #15803d;
+  border-bottom: 3px solid #15803d;
+  padding-bottom: 3px;
+}
+
+.homefeaturedproducts-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  text-align: start;
+  cursor: pointer;
+}
+
+.homefeaturedproducts-card:hover {
+  box-shadow: 0 4px 10px rgba(16, 104, 44, 0.5);
+}
+
+.homefeaturedproducts-img {
+  /* height: 120px; */
+  object-fit: contain;
+  /* margin-top: 20px; */
+  width: 100%;
+}
+
+.homefeaturedproducts-category {
+  color: #15803d;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.homefeaturedproducts-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.homefeaturedproducts-weight {
+  font-size: 14px;
+  color: #888;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.homefeaturedproducts-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.homefeaturedproducts-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.homefeaturedproducts-current {
+  color: #15803d;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.homefeaturedproducts-old {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 14px;
+}
+
+.homefeaturedproducts-add {
+  background: #15803d !important;
+  border: none;
+  font-size: 12px;
+  padding: 5px 9px;
+}
+
+.homefeaturedproducts-add:hover {
+  background: #10682c !important;
+}
+
+.SpecialSale-add-to-cart {
+  background: #15803d !important;
+  border: none !important;
+  font-size: 12px !important;
+  padding: 7px 12px !important;
+  border-radius: 4px;
+}
+
+.SpecialSale-add-to-cart:hover {
+  background: #10682c !important;
+}
+
+.home-featured-prodcuts-no-data {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 0px !important;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .homefeaturedproducts-card {
+    flex: 1 1 calc(50% - 15px);
+  }
+}
+
+@media (max-width: 480px) {
+  .homefeaturedproducts-card {
+    flex: 1 1 100%;
+  }
+}
+
+/* Main Container */
+.SpecialSale-main {
+  padding: 40px 0;
+  text-align: center;
+  overflow: hidden;
+  font-family: "Inter", "Poppins", sans-serif !important;
+}
+
+/* Title with Half Underline */
+.SpecialSale-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  display: inline-block;
+  position: relative;
+  padding-top: 20px;
+}
+
+.SpecialSale-title::after {
+  content: "";
+  width: 6%;
+  height: 4px;
+  background-color: #26a541;
+  position: absolute;
+  left: 44%;
+  bottom: -8px;
+  border-radius: 2px;
+}
+
+.homefeaturedproducts-carticon {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.SpecialSale-title span {
+  color: #26a541;
+}
+
+.SpecialSale-row1 {
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Product Card */
+.SpecialSale-card {
+  display: flex;
+  border: 2px #d9d9d9 solid !important;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 29px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  cursor: pointer;
+}
+
+/* Discount Badge */
+.SpecialSale-badge {
+  position: absolute;
+  background: #26a541;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 3px;
+  top: 10px;
+  left: 10px;
+}
+
+/* Card Content */
+.SpecialSale-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Product Image */
+.SpecialSale-image {
+  flex: 0.4;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SpecialSale-image img {
+  width: 200px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Product Details */
+.SpecialSale-info {
+  flex: 0.6;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.SpecialSale-info h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.SpecialSale-info h5 span {
+  color: #26a541;
+}
+
+.SpecialSale-weight {
+  font-size: 14px;
+  color: #888;
+  font-weight: 600;
+  margin-bottom: 10px !important;
+}
+
+/* Pricing */
+.SpecialSale-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.SpecialSale-oldPrice {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+/* Description */
+.SpecialSale-desc {
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Add Button */
+.SpecialSale-btn {
+  background-color: #26a541;
+  border: none;
+  padding: 6px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+}
+
+.SpecialSale-btn:hover {
+  background-color: #1f8b35;
+}
+
+.recently-viewed-section-container {
+  background-color: #f5f5f5;
+  font-family: "Inter", "Poppins", sans-serif !important;
+}
+
+@media (max-width: 768px) {
+  .SpecialSale-title {
+    font-size: 24px;
+  }
+
+  .SpecialSale-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .SpecialSale-content {
+    flex-direction: column;
+  }
+
+  .SpecialSale-image {
+    flex: unset;
+  }
+
+  .SpecialSale-info {
+    flex: unset;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .SpecialSale-price {
+    font-size: 16px;
+  }
+
+  .SpecialSale-oldPrice {
+    font-size: 12px;
+  }
+
+  .SpecialSale-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .SpecialSale-title {
+    font-size: 22px;
+  }
+
+  .SpecialSale-card {
+    padding: 10px;
+  }
+
+  .SpecialSale-info h5 {
+    font-size: 16px;
+  }
+
+  .SpecialSale-price {
+    font-size: 14px;
+  }
+
+  .SpecialSale-btn {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+
+  .SpecialSale-title::after {
+    width: 40px;
+  }
+}

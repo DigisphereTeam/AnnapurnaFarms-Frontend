@@ -1,0 +1,30 @@
+.admin-notify-container {
+  min-height: 100vh;
+  padding: 20px;
+  font-family: "Inter", "Poppins", sans-serif !important;
+}
+
+.notify-table thead th {
+  background-color: #304d30 !important;
+  color: #ffffff !important;
+  font-weight: 400;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 15px;
+}
+
+/* .notify-table tbody td {
+  font-size: 14px;
+  color: #333;
+  text-align: start;
+  padding: 10px;
+  font-weight: 400;
+} */
+
+.notify-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.notify-table tr:hover {
+  background-color: #e6f3e6;
+}

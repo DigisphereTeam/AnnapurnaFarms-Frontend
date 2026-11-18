@@ -1,0 +1,285 @@
+.admin-dashboard-overall-count {
+  min-height: 100vh;
+  padding: 20px;
+  font-family: "Inter", "Poppins", sans-serif !important;
+}
+
+.admin-dashboard-overall-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 25px;
+}
+
+.admin-dashboard-overall-sub-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 35px 0 20px;
+}
+
+.admin-dashboard-overall-product-card,
+.admin-dashboard-overall-coupon-card,
+.admin-dashboard-overall-order-card,
+.admin-dashboard-overall-payment-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.admin-dashboard-overall-product-card:hover,
+.admin-dashboard-overall-coupon-card:hover,
+.admin-dashboard-overall-order-card:hover,
+.admin-dashboard-overall-payment-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.admin-dashboard-overall-title-card-product,
+.admin-dashboard-overall-coupons-title-card,
+.admin-dashboard-overall-order-title-card {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #4b5563;
+}
+
+.admin-dashboard-overall-product-count-card,
+.admin-dashboard-overall-coupons-count-card {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 10px;
+}
+
+.admin-dashboard-overall-order-count-card {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 17px;
+  text-align: center;
+}
+
+.admin-dashboard-overall-order-card .card-header {
+  background: #fff;
+  border-bottom: none;
+  padding: 10px 0px 0px 0px;
+}
+
+.admin-dashboard-overall-order-card .card-footer {
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  text-align: center;
+  padding: 4px;
+}
+
+.admin-dashboard-overall-more-info-order {
+  color: #db9b0e !important;
+  text-decoration: none !important;
+  font-weight: 600;
+}
+
+.admin-dashboard-overall-more-info-order:hover {
+  color: #b77900 !important;
+}
+
+.admin-dashboard-overall-card-title-payment {
+  font-size: 0.96rem;
+  font-weight: 600;
+  text-align: center;
+  color: #4b5563;
+}
+
+.admin-dashboard-overall-card-count-payment {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 10px;
+}
+
+.admin-dashboard-overall-value-payment {
+  font-weight: 600;
+  color: #ec4899;
+}
+
+.admin-dashboard-overall-value-payment .card-header {
+  background: white;
+  border-bottom: none;
+  padding: 10px 0px 0px 0px;
+}
+
+/* =========================
+   Tablet Devices
+========================= */
+@media (max-width: 992px) {
+  .admin-dashboard-overall-heading {
+    font-size: 1.8rem;
+  }
+
+  .admin-dashboard-overall-sub-heading {
+    font-size: 1.3rem;
+    margin: 28px 0 16px;
+  }
+
+  .admin-dashboard-overall-product-count-card,
+  .admin-dashboard-overall-coupons-count-card,
+  .admin-dashboard-overall-order-count-card {
+    font-size: 1.3rem;
+  }
+
+  .admin-dashboard-overall-card-count-payment {
+    font-size: 1rem;
+  }
+}
+
+/* =========================
+   Mobile Devices
+========================= */
+@media (max-width: 768px) {
+  .admin-dashboard-overall-count {
+    padding: 15px;
+  }
+
+  .admin-dashboard-overall-heading {
+    font-size: 1.6rem;
+    text-align: start;
+  }
+
+  .admin-dashboard-overall-sub-heading {
+    font-size: 1.2rem;
+    margin: 25px 0 15px;
+    text-align: start;
+  }
+
+  .admin-dashboard-overall-title-card-product,
+  .admin-dashboard-overall-coupons-title-card,
+  .admin-dashboard-overall-order-title-card,
+  .admin-dashboard-overall-card-title-payment {
+    font-size: 0.95rem;
+  }
+
+  .admin-dashboard-overall-product-count-card,
+  .admin-dashboard-overall-coupons-count-card,
+  .admin-dashboard-overall-order-count-card {
+    font-size: 1.25rem;
+  }
+
+  .admin-dashboard-overall-card-count-payment {
+    font-size: 1rem;
+  }
+
+  .admin-dashboard-overall-order-card .card-header {
+    padding-top: 15px;
+  }
+}
+
+/* =========================
+   Small Mobile Devices
+========================= */
+@media (max-width: 576px) {
+  .admin-dashboard-overall-count {
+    padding: 12px;
+  }
+
+  .admin-dashboard-overall-heading {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .admin-dashboard-overall-sub-heading {
+    font-size: 1.1rem;
+    margin: 20px 0 12px;
+  }
+
+  .admin-dashboard-overall-product-card,
+  .admin-dashboard-overall-coupon-card,
+  .admin-dashboard-overall-order-card,
+  .admin-dashboard-overall-payment-card {
+    margin-bottom: 15px;
+  }
+
+  .admin-dashboard-overall-title-card-product,
+  .admin-dashboard-overall-coupons-title-card,
+  .admin-dashboard-overall-order-title-card,
+  .admin-dashboard-overall-card-title-payment {
+    font-size: 0.9rem;
+  }
+
+  .admin-dashboard-overall-product-count-card,
+  .admin-dashboard-overall-coupons-count-card,
+  .admin-dashboard-overall-order-count-card {
+    font-size: 1.15rem;
+  }
+
+  .admin-dashboard-overall-card-count-payment {
+    font-size: 0.95rem;
+  }
+
+  .admin-dashboard-overall-more-info-order {
+    font-size: 0.85rem;
+  }
+}
+
+/* =========================
+   Very Small Devices
+========================= */
+@media (max-width: 360px) {
+  .admin-dashboard-overall-heading {
+    font-size: 1.25rem;
+  }
+
+  .admin-dashboard-overall-sub-heading {
+    font-size: 1rem;
+  }
+
+  .admin-dashboard-overall-product-count-card,
+  .admin-dashboard-overall-coupons-count-card,
+  .admin-dashboard-overall-order-count-card {
+    font-size: 1rem;
+  }
+
+  .admin-dashboard-overall-card-count-payment {
+    font-size: 0.9rem;
+  }
+
+  .admin-dashboard-overall-more-info-order {
+    font-size: 0.8rem;
+  }
+}
+
+/* 
+@media (max-width: 768px) {
+  .admin-dashboard-overall-heading {
+    font-size: 1.7rem;
+  }
+
+  .admin-dashboard-overall-sub-heading {
+    font-size: 1.2rem;
+  }
+
+  .admin-dashboard-overall-product-count-card,
+  .admin-dashboard-overall-order-count-card {
+    font-size: 1.7rem;
+  }
+
+  .admin-dashboard-overall-card-count-payment {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .admin-dashboard-overall-count {
+    padding: 12px;
+  }
+
+  .admin-dashboard-overall-product-card,
+  .admin-dashboard-overall-coupon-card,
+  .admin-dashboard-overall-order-card,
+  .admin-dashboard-overall-payment-card {
+    margin-bottom: 15px;
+  }
+} */

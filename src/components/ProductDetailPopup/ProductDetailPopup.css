@@ -1,0 +1,315 @@
+.popup-container {
+  text-align: left;
+  padding: 20px;
+  font-family: "Inter", "Poppins", sans-serif !important;
+}
+
+/* Product Image */
+.popup-product-img {
+  width: 100%;
+  max-width: 400px;
+  height: 350px;
+  /* object-fit: cover; */
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Buttons Container */
+.popup-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.popup-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #15803d !important;
+  color: #ffff !important;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.popup-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.popup-description {
+  font-size: 15px;
+}
+
+/* Aligning Text Content */
+.popup-title,
+.popup-description,
+.popup-price,
+.popup-grams-label,
+.quantity-controls {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.popup-grams-label {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.popup-description {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.popup-price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Quantity Buttons & Input */
+.quantity-controls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* gap: 5px; */
+  margin-top: -5px;
+}
+
+.quantity-btn {
+  background-color: #d9d9d9;
+  color: #000000;
+  border: none;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.quantity-btn:hover {
+  background-color: #d9d9d9;
+}
+
+.quantity-btn:disabled {
+  background-color: #d3d3d3;
+  color: #888;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.quantity-value {
+  font-size: 17px;
+  font-weight: 600;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Grams Buttons */
+.grams-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 10px 0;
+  margin-left: 10px;
+}
+
+.grams-btn {
+  background: transparent;
+  color: #15803d;
+  border: 2px solid #15803d;
+  padding: 4px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 14px;
+}
+
+.grams-btn:hover,
+.grams-btn.selected {
+  background: #15803d !important;
+  color: #ffffff;
+}
+
+/* Style for the share modal */
+.share-modal {
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.share-modal .modal-content {
+  width: 350px !important;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+}
+
+.share-modal .modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.share-modal .modal-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.share-modal .modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 15px;
+}
+
+/* Social Media Icons */
+.share-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.share-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.share-icons a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual Social Media Colors */
+.share-icons a.whatsapp {
+  background-color: #25d366;
+}
+
+.share-icons a.facebook {
+  background-color: #1877f2;
+}
+
+.share-icons a.instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
+
+.share-icons a svg {
+  color: #fff;
+  font-size: 26px;
+}
+
+.popup-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.stock-status-badge {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  background-color: #fff;
+  color: #000;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.stock-status-badge.in-stock {
+  background: #15803d !important;
+  color: #fff;
+}
+
+.stock-status-badge.out-of-stock {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .popup-container {
+    padding: 15px;
+  }
+
+  .popup-image-wrapper {
+    margin-top: 15px;
+  }
+
+  .popup-product-img {
+    max-width: 300px;
+    height: 250px;
+  }
+
+  /* Keep buttons side by side on mobile/tablet */
+  .popup-buttons {
+    flex-direction: row; /* force horizontal */
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* if needed wrap on very small */
+  }
+
+  .popup-btn {
+    /* optional: reduce width on small devices */
+    padding: 8px 15px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .quantity-controls {
+    justify-content: flex-start;
+  }
+
+  .stock-status-badge {
+    top: 8px; /* Slightly closer to top */
+    left: 10px; /* Shift closer to left edge */
+    font-size: 11px; /* Smaller font */
+    padding: 4px 8px; /* Slightly smaller padding */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .popup-product-img {
+    max-width: 250px;
+  }
+
+  .stock-status-badge {
+    top: 6px;
+    left: 6px;
+    font-size: 10px;
+    padding: 3px 7px;
+  }
+}

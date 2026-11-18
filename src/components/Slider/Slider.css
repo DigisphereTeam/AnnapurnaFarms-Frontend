@@ -1,0 +1,80 @@
+.carousel-container {
+  overflow: hidden;
+  font-family: "Inter", "Poppins", sans-serif !important;
+    width: 100%;
+}
+
+/* Fade & Zoom Effect */
+.carousel-fade img {
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+  opacity: 0.6;
+  transform: scale(1);
+}
+
+.carousel-item.active .carousel-fade img {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Adjust height for responsiveness */
+.carousel-custom .carousel-item img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Caption Styling */
+.carousel-caption {
+  text-align: left;
+  left: 5%;
+  right: auto;
+  bottom: 25%;
+  max-width: 600px;
+}
+
+/* Title Styling */
+.carousel-container-title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  max-width: 60%;
+  line-height: 1.2;
+}
+
+/* Description Styling */
+.carousel-container-para {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-custom .carousel-item img {
+    height: 250px;
+  }
+  .carousel-container-title {
+    font-size: 24px;
+  }
+  .carousel-container-para {
+    font-size: 14px;
+  }
+  .carousel-caption {
+    bottom: 10%;
+  }
+}
+
+@media (max-width: 468px) {
+  .carousel-custom .carousel-item img {
+    height: 200px;
+  }
+  .carousel-caption {
+    bottom: 0%;
+  }
+  .carousel-container-title {
+    font-size: 16px;
+  }
+  .carousel-container-para {
+    font-size: 10px;
+  }
+}
