@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Modal, Button } from "react-bootstrap";
-import { FaShoppingCart, FaBell, FaShoppingBag } from "react-icons/fa";
+import { FaShoppingCart, FaBell, FaShoppingBag, FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
 import { RiShareForwardFill } from "react-icons/ri";
-import { FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
 import { BASE_URL, CART_API, NOTIFY_API } from "../../api/api";
 import { useNavigate } from "react-router-dom";
 
@@ -81,7 +80,8 @@ const ProductDetailPopup = ({ show, onHide, product }) => {
   const handleAddToCart = async () => {
     if (!userId) {
       toast.info("Please log in to add items to the cart!");
-      // window.location.href = "/signin";
+      onHide()
+      navigate("/signin")
       return;
     }
 
@@ -129,6 +129,8 @@ const ProductDetailPopup = ({ show, onHide, product }) => {
   const handleBuyNow = async () => {
     if (!userId) {
       toast.info("Please log in to purchase items!");
+      onHide()
+      navigate("/signin")
       return;
     }
 
@@ -180,6 +182,8 @@ const ProductDetailPopup = ({ show, onHide, product }) => {
   const handleNotifyMe = async () => {
     if (!userId) {
       toast.info("Please log in to register for notification!");
+      onHide();
+      navigate("/signin");
       return;
     }
 

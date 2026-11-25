@@ -74,6 +74,7 @@ const ProductList = () => {
 
     if (!userId) {
       toast.warning("Please login to request notification");
+      navigate("/signin");
       return;
     }
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {
   Form,
@@ -14,7 +14,6 @@ import { toast } from "react-toastify";
 import { User_SignUp } from "../../api/api";
 
 import "./SignUp.css";
-
 import Logo from "../../assets/annapurna_logo.png";
 
 const SignUp = () => {
@@ -26,6 +25,8 @@ const SignUp = () => {
     phone: "",
     password: "",
     confirmPassword: "",
+    city: "",
+    pincode: "",
   });
 
   const [showPassword, setShowPassword] = useState(false);
@@ -93,6 +94,8 @@ const SignUp = () => {
         phone_number: userSignupData.phone,
         password: userSignupData.password,
         confirm_password: userSignupData.confirmPassword,
+        city: userSignupData.city,
+        pincode: userSignupData.pincode,
       };
 
       try {
@@ -228,7 +231,9 @@ const SignUp = () => {
 
                 <Col sm={6}>
                   <Form.Group controlId="formConfirmPassword" className="mb-3">
-                    <Form.Label className="singup-label">Confirm Password</Form.Label>
+                    <Form.Label className="singup-label">
+                      Confirm Password
+                    </Form.Label>
                     <InputGroup>
                       <Form.Control
                         type={showConfirmPassword ? "text" : "password"}
@@ -247,6 +252,35 @@ const SignUp = () => {
                         {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
                       </InputGroup.Text>
                     </InputGroup>
+                  </Form.Group>
+                </Col>
+              </Row>
+
+              <Row>
+                <Col sm={6}>
+                  <Form.Group controlId="formCity" className="mb-2">
+                    <Form.Label className="singup-label">City</Form.Label>
+                    <Form.Control
+                      type="text"
+                      name="city"
+                      value={userSignupData.city}
+                      onChange={handleChange}
+                      placeholder="Enter city name"
+                      className="signup-input-field"
+                    />
+                  </Form.Group>
+                </Col>
+                <Col sm={6}>
+                  <Form.Group controlId="formPincode" className="mb-2">
+                    <Form.Label className="singup-label">Pincode</Form.Label>
+                    <Form.Control
+                      type="text"
+                      name="pincode"
+                      value={userSignupData.pincode}
+                      onChange={handleChange}
+                      placeholder="Enter pincode"
+                      className="signup-input-field"
+                    />
                   </Form.Group>
                 </Col>
               </Row>

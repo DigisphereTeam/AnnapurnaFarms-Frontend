@@ -241,7 +241,7 @@ const Header = () => {
 
   const handleCategoryClick = (categoryName) => {
       setIsMobile(false);
-  setShowProductsDropdown(false);
+      setShowProductsDropdown(false);
   
     const formattedCategory = categoryName.toLowerCase().replace(/\s+/g, "-");
     navigate(`/category/${formattedCategory}`);
@@ -358,6 +358,9 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link as={Link} to="/faqs" onClick={() => setIsMobile(false)}>
                 FAQs
+              </Nav.Link>
+              <Nav.Link as={Link} to="/membership" onClick={() => setIsMobile(false)}>
+                Membership
               </Nav.Link>
               <Nav.Link
                 as={Link}

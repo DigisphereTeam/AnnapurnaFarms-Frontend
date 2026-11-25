@@ -22,7 +22,6 @@
 /* Responsive Image */
 .payment_gateway-ImgUPI {
   width: 100%;
-  /* max-width: 100%; */
   height: auto;
 }
 
@@ -218,6 +217,100 @@
   border: 2px solid #304d30 !important;
 }
 
+/* ---------- Saved address cards ---------- */
+.saved-addr-card {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.saved-addr-card.selected {
+  border-color: #15803d;
+  background-color: #f4fbf6;
+}
+
+.saved-addr-card input[type="radio"] {
+  accent-color: #15803d;
+}
+
+.addr-action-btn {
+  background: none;
+  border: none;
+  color: #4b5563;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.addr-action-btn:hover {
+  color: #15803d;
+}
+
+/* ---------- Dashed "Add New Address" card ---------- */
+.add-addr-card {
+  width: 100%;
+  min-height: 64px;
+  background: #fff;
+  border: 1.5px dashed #15803d;
+  border-radius: 8px;
+  color: #15803d;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-addr-card:hover {
+  background: #f4fbf6;
+}
+
+/* ---------- Inline new address form ---------- */
+.new-addr-box {
+  border: 1.5px solid #15803d;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+}
+
+.new-addr-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #15803d;
+}
+
+.add-new-addr-btn {
+  background: #fff;
+  color: #15803d;
+  border: 1.5px solid #15803d;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.add-new-addr-btn:hover {
+  background: #15803d;
+  color: #fff;
+}
+
+.payment_gateway-btn:disabled {
+  background: #9ca3af !important;
+  color: #f3f4f6 !important;
+  cursor: not-allowed;
+}
+
 /* Tablets (Max Width: 1024px) */
 @media (max-width: 1024px) {
   .payment_gateway-container {
@@ -296,5 +389,9 @@
 
   .order_summary h2 {
     font-size: 16px;
+  }
+
+  .new-addr-box {
+    padding: 14px;
   }
 }

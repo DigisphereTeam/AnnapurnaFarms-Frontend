@@ -48,6 +48,7 @@ import AdminCoupons from "./components/admin/AdminCoupons/AdminCoupons";
 import AdminUserList from "./components/admin/AdminUserList/AdminUserList";
 import AdminSignIn from "./components/admin/AdminSignIn/AdminSignIn";
 import AdminNotify from "./components/admin/AdminNotify/AdminNotify";
+import Membership from "./components/Membership/Membership";
 
 function Layout({ children }) {
   const location = useLocation();
@@ -99,6 +100,7 @@ function App() {
           />
           <Route path="/blog" element={<Blog />} />
           <Route path="/faqs" element={<Faqs />} />
+          <Route path="/membership" element={<Membership />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/user-profile" element={<UserProfile />} />

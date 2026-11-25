@@ -74,6 +74,11 @@ export const ORDERS_API = {
   GET_ORDER_PRODUCTS: `${BASE_URL}/order/getorderproducts`,
   UPDATE_ORDER_STATUS: `${BASE_URL}/order/updateOrderstatus`,
 };
+export const ADDRESS_API = {
+  GET_ADDRESSES: (userId) => `${BASE_URL}/user/${userId}/addresses`,
+  UPDATE_ADDRESS: (userId, addressId) =>`${BASE_URL}/user/${userId}/addresses/${addressId}`,
+  DELETE_ADDRESS: (userId, addressId) =>`${BASE_URL}/user/${userId}/addresses/${addressId}`,
+};
 
 //Dashboard
 export const DASHBOARD_API = {

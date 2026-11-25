@@ -1,7 +1,11 @@
 .signup-container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   font-family: "Inter", "Poppins", sans-serif !important;
+}
+
+.signup-row {
+  min-height: 100vh;
 }
 
 /* Left Side - Image Section */
@@ -12,7 +16,6 @@
   justify-content: center;
   text-align: center;
   padding: 30px;
-  height: 100%;
   color: white;
 }
 
@@ -27,6 +30,13 @@
 }
 
 /* Right Side - Sign Up Form */
+.signup-form-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+}
+
 .signup-form {
   max-width: 600px;
   width: 100%;
@@ -113,12 +123,15 @@
     display: none;
   }
   .signup-container {
-    justify-content: center;
-    height: 150vh;
+    min-height: 100vh;
+    height: auto;
+  }
+  .signup-row {
+    min-height: 100vh;
   }
   .signup-form {
     max-width: 100%;
-    padding: 20px;
+    padding: 12px;
   }
   .signup-btn {
     width: 100%;
